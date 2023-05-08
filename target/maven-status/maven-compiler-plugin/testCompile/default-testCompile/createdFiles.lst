@@ -1,0 +1,4 @@
+steps\Ebay_home_steps.class
+steps\Ebay_advenced_search_steps.class
+steps\Comuns_steps.class
+test_runners\Test_runner01.class

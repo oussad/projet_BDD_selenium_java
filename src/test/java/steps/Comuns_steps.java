@@ -2,13 +2,14 @@ package steps;
 
 import java.time.Duration;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Comuns_steps {
@@ -23,11 +24,20 @@ public class Comuns_steps {
 	}
 
 	@After
-	public void teardown() {
+	public void teardown(Scenario scenario) {
+		if (scenario.isFailed()) {
+			//prendre une capture d ecrn de scenation echoue 
+			final byte[] screen = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+			//et colle cette capture dasn le rapport de test
+			scenario.attach(screen, "image/png",scenario.getName());
+
+		}
+
 		driver.quit();
 	}
+
 	public WebDriver get_driver() {
-		
+
 		return driver;
 	}
 }

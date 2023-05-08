@@ -12,8 +12,9 @@ import io.cucumber.junit.CucumberOptions;
         tags = "@smoke",
         //name = {"link"},
         monochrome = true, 
-        plugin = { "pretty","html:Rapport1.html" },
+       // plugin = { "pretty","html:Rapport1.html" },
 		// plugin = { "pretty", "json:Rapport2.json" },
+        plugin = { "pretty","json:target/json-report/cucumber.json" },
 
 		dryRun = false
 
