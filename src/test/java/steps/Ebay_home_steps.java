@@ -36,7 +36,7 @@ public class Ebay_home_steps {
 	@Then("i navigate to advanced search page")
 	public void navigateadvancedsearch() {
 		String expecteduRL = "https://www.ebay.com/sch/ebayadvsearch";
-		String expectedtitle = "Advanced Search | eBaya";
+		String expectedtitle = "Advanced Search | eBay";
 		String actuelURL = driver.getCurrentUrl();
 		String actueltitle = driver.getTitle();
 		Assert.assertEquals(expectedtitle, actueltitle);

@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = { "features" }, 
         glue = { "steps" },
-        tags = "@smoke",
+        //tags = "@smoke,",
         //name = {"link"},
         monochrome = true, 
        // plugin = { "pretty","html:Rapport1.html" },
