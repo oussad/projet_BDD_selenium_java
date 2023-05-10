@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: test_runners.Test_runner01
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.506 s - in test_runners.Test_runner01
+Tests run: 9, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 84.189 s <<< FAILURE! - in test_runners.Test_runner01
+advanced search item(advanced search page)  Time elapsed: 8.989 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: "47,000"
+
+search item(home page ebay)  Time elapsed: 8.562 s  <<< FAILURE!
+java.lang.AssertionError: nombres d element affiche <80
+
+search item in category(home page ebay)  Time elapsed: 8.961 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: "26,000"
+

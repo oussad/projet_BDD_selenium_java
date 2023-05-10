@@ -3,7 +3,7 @@ package steps;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 
 public class Ebay_advenced_search_steps {
@@ -31,5 +31,17 @@ public class Ebay_advenced_search_steps {
 		Assert.assertEquals(expectedtitle, actueltitle);
 		Assert.assertEquals(expecteduRL, actuelURL);
 	}
+	
+	@When("i advanced search an item")
+	public void i_advanced_search_an_item(DataTable dataTable) throws InterruptedException {
+		driver.findElement(By.id("_nkw")).sendKeys(dataTable.cell(1, 0));
+		driver.findElement(By.id("_ex_kw")).sendKeys(dataTable.cell(1, 1));
+		driver.findElement(By.name("_udlo")).sendKeys(dataTable.cell(1, 2));
+		driver.findElement(By.name("_udhi")).sendKeys(dataTable.cell(1, 3));
+		driver.findElement(By.xpath("//div[@class='adv-form__actions']/button")).click();
+		Thread.sleep(5);
+	}
+
+
 
 }

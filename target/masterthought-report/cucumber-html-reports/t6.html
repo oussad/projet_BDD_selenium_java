@@ -42,10 +42,9 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber-JVM Reports  - Failures Overview</title>
+<title>Cucumber-JVM Reports  - Tag: @t6</title>
 
 </head>
-
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
@@ -56,7 +55,7 @@ $(document).ready(function() {
                 <li role="presentation" ><a href="feature-overview.html">Features</a></li>
         <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
         <li role="presentation" ><a href="step-overview.html">Steps</a></li>
-        <li role="presentation"  class="active" ><a href="failures-overview.html">Failures</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
       </ul>
     </div>
   </div>
@@ -88,34 +87,85 @@ $(document).ready(function() {
 <div id="report-lead" class="container-fluid>
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <h2>Failures Overview</h2>
-              <p>The following summary displays scenarios that failed.</p>
+      <h2>Tag Report</h2>
           </div>
   </div>
 </div>
 
-
 <div class="container-fluid" id="summary">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-              <div class="elements">
-                      
+      <table class="stats-table">
+
+        <thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="6">Steps</th>
+    <th colspan="2">Totals</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+        <tbody>
+        <tr>
+          <td class="tagname">@t6</td>
+                    <td  class="passed"    >4</td>
+          <td >0</td>
+          <td class="total">4</td>
+          <td      class="passed"    >12</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">12</td>
+          <td class="duration" data-value="21971858500">21s 971ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
 <div class="element">
       <div class="indention">
-      <a href="file-features-Ebay_advenced_search-feature.html">View Feature</a> <i>advanced search page</i>
+      <a href="file-features-Ebay_home-feature.html">View Feature</a> <i>home page ebay</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="t5.html">@t5</a>
+       <a href="t6.html">@t6</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">advanced search item</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">home page links</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -124,7 +174,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -145,7 +195,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">steps.Comuns_steps.setup()</span>
                         
-  <span class="lead-duration duration">3s 155ms</span>
+  <span class="lead-duration duration">3s 035ms</span>
 
           </div>
 
@@ -161,9 +211,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -173,14 +223,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">i am on advanced search page</span>
+  <span class="name">i am on ebay home page</span>
   
-  <span class="lead-duration duration">1s 398ms</span>
+  <span class="lead-duration duration">1s 488ms</span>
 
   </div>
 
@@ -199,29 +249,15 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">i advanced search an item</span>
+  <span class="name">i click on 'Motors'</span>
   
-  <span class="lead-duration duration">2s 230ms</span>
+  <span class="lead-duration duration">3s 936ms</span>
 
   </div>
 
         
 
 
-                  <table class="step-arguments">
-                          <tr>
-                                  <td>item</td>
-                                  <td>exclude</td>
-                                  <td>min</td>
-                                  <td>max</td>
-                              </tr>
-                          <tr>
-                                  <td>laptop</td>
-                                  <td>refurbished</td>
-                                  <td>200</td>
-                                  <td>800</td>
-                              </tr>
-                      </table>
         
         
 
@@ -232,32 +268,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">i validate at least 80 search items present</span>
+  <span class="name">i validet i navigate to 'https://www.ebay.com/b/Auto-Parts-and-Vehicles/6000/bn_1865334' and title contains 'eBay Motors: Auto Parts and Vehicles'</span>
   
-  <span class="lead-duration duration">147ms</span>
+  <span class="lead-duration duration">011ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>java.lang.NumberFormatException: For input string: "47,000"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:668)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at steps.Ebay_home_steps.i_validate_at_least_search_items_present(Ebay_home_steps.java:61)
-	at ✽.i validate at least 80 search items present(file:///D:/formation/session%201/ALGORITHMES%20ET%20INITATION%20À%20LA%20PROGRAMMATION/programme%20java/Projet_cucumber/features/Ebay_advenced_search.feature:15)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -274,7 +293,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -286,13 +305,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">steps.Comuns_steps.teardown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">2s 034ms</span>
+  <span class="lead-duration duration">1s 399ms</span>
 
           </div>
 
@@ -300,17 +319,6 @@ $(document).ready(function() {
 
           
           
-  <div class="embeddings inner-level">
-                <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-7876422" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-7876422.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
-    </div>
-    <div id="embedding_embedding_-7876422" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-7876422.png"></span>
-    </div>
-  </div>
-        </div>
 
         </div>
           </div>
@@ -319,7 +327,7 @@ $(document).ready(function() {
   </div>
 </div>
 
-                      
+                  
 <div class="element">
       <div class="indention">
       <a href="file-features-Ebay_home-feature.html">View Feature</a> <i>home page ebay</i>
@@ -327,15 +335,15 @@ $(document).ready(function() {
   
   
 <div class="tags indention">
-       <a href="t1.html">@t1</a>
+       <a href="t6.html">@t6</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">search item</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">home page links</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -344,10 +352,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-6" class="collapse collapsable-details  in ">
+  <div id="element-5" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-7">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -359,13 +367,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-7" class="inner-level collapse collapsable-details ">
+    <div id="before-6" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">steps.Comuns_steps.setup()</span>
                         
-  <span class="lead-duration duration">3s 214ms</span>
+  <span class="lead-duration duration">3s 136ms</span>
 
           </div>
 
@@ -381,9 +389,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -393,14 +401,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">i am on ebay home page</span>
   
-  <span class="lead-duration duration">1s 485ms</span>
+  <span class="lead-duration duration">1s 466ms</span>
 
   </div>
 
@@ -419,9 +427,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">i search 'selenium webdriver'</span>
+  <span class="name">i click on 'Electronics'</span>
   
-  <span class="lead-duration duration">1s 846ms</span>
+  <span class="lead-duration duration">4s 220ms</span>
 
   </div>
 
@@ -438,30 +446,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">i validate at least 80 search items present</span>
+  <span class="name">i validet i navigate to 'https://www.ebay.com/b/Electronics/bn_7000259124' and title contains 'Electronics products for sale'</span>
   
-  <span class="lead-duration duration">037ms</span>
+  <span class="lead-duration duration">007ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
-          <a>Error message</a>
-      </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError: nombres d element affiche <80
-	at org.junit.Assert.fail(Assert.java:89)
-	at steps.Ebay_home_steps.i_validate_at_least_search_items_present(Ebay_home_steps.java:63)
-	at ✽.i validate at least 80 search items present(file:///D:/formation/session%201/ALGORITHMES%20ET%20INITATION%20À%20LA%20PROGRAMMATION/programme%20java/Projet_cucumber/features/Ebay_home.feature:16)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -478,7 +471,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -490,13 +483,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-10" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">steps.Comuns_steps.teardown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">1s 962ms</span>
+  <span class="lead-duration duration">1s 299ms</span>
 
           </div>
 
@@ -504,17 +497,6 @@ $(document).ready(function() {
 
           
           
-  <div class="embeddings inner-level">
-                <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_4227255" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_4227255.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
-    </div>
-    <div id="embedding_embedding_4227255" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_4227255.png"></span>
-    </div>
-  </div>
-        </div>
 
         </div>
           </div>
@@ -523,7 +505,7 @@ $(document).ready(function() {
   </div>
 </div>
 
-                      
+                  
 <div class="element">
       <div class="indention">
       <a href="file-features-Ebay_home-feature.html">View Feature</a> <i>home page ebay</i>
@@ -531,15 +513,15 @@ $(document).ready(function() {
   
   
 <div class="tags indention">
-       <a href="t2.html">@t2</a>
+       <a href="t6.html">@t6</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">search item in category</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">home page links</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -548,10 +530,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details  in ">
+  <div id="element-9" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -563,13 +545,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-12" class="inner-level collapse collapsable-details ">
+    <div id="before-10" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">steps.Comuns_steps.setup()</span>
                         
-  <span class="lead-duration duration">3s 090ms</span>
+  <span class="lead-duration duration">3s 046ms</span>
 
           </div>
 
@@ -585,9 +567,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -597,14 +579,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">i am on ebay home page</span>
   
-  <span class="lead-duration duration">1s 493ms</span>
+  <span class="lead-duration duration">1s 317ms</span>
 
   </div>
 
@@ -623,9 +605,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">i search 'postman' in 'Books' category</span>
+  <span class="name">i click on 'Collectibles'</span>
   
-  <span class="lead-duration duration">2s 326ms</span>
+  <span class="lead-duration duration">3s 997ms</span>
 
   </div>
 
@@ -642,32 +624,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">i validate at least 20 search items present</span>
+  <span class="name">i validet i navigate to 'https://www.ebay.com/b/Collectibles-Art/bn_7000259855' and title contains 'Collectibles & Art products for sale'</span>
   
-  <span class="lead-duration duration">020ms</span>
+  <span class="lead-duration duration">008ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
-          <a>Error message</a>
-      </div>
-      <div id="msg-14" class="collapse collapsable-details">
-        <pre>java.lang.NumberFormatException: For input string: "26,000"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:668)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at steps.Ebay_home_steps.i_validate_at_least_search_items_present(Ebay_home_steps.java:61)
-	at ✽.i validate at least 20 search items present(file:///D:/formation/session%201/ALGORITHMES%20ET%20INITATION%20À%20LA%20PROGRAMMATION/programme%20java/Projet_cucumber/features/Ebay_home.feature:22)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -684,7 +649,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -696,13 +661,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-15" class="inner-level collapse collapsable-details ">
+    <div id="after-12" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">steps.Comuns_steps.teardown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">2s 022ms</span>
+  <span class="lead-duration duration">1s 282ms</span>
 
           </div>
 
@@ -710,17 +675,6 @@ $(document).ready(function() {
 
           
           
-  <div class="embeddings inner-level">
-                <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-306982122" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-306982122.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
-    </div>
-    <div id="embedding_embedding_-306982122" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-306982122.png"></span>
-    </div>
-  </div>
-        </div>
 
         </div>
           </div>
@@ -729,8 +683,187 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  </div>
+                  
+<div class="element">
+      <div class="indention">
+      <a href="file-features-Ebay_home-feature.html">View Feature</a> <i>home page ebay</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="t6.html">@t6</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">home page links</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">steps.Comuns_steps.setup()</span>
+                        
+  <span class="lead-duration duration">3s 123ms</span>
+
           </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">i am on ebay home page</span>
+  
+  <span class="lead-duration duration">1s 486ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">i click on 'Fashion'</span>
+  
+  <span class="lead-duration duration">4s 023ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">i validet i navigate to 'https://www.ebay.com/b/Clothing-Shoes-Accessories/11450/bn_1852545' and title contains 'Clothing, Shoes & Accessories for sale'</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-16" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">steps.Comuns_steps.teardown(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 342ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
   </div>
 </div>
 <br>
