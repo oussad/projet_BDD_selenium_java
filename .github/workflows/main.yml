@@ -11,7 +11,7 @@ jobs:
     - name: Configuration de Java
       uses: actions/setup-java@v2
       with:
-        java-version: '11'  # Spécifier la version de Java que vous souhaitez utiliser, par exemple '11'
+        java-version: '17'  # Spécifier la version de Java que vous souhaitez utiliser, par exemple '11'
 
     - name: Construction du projet
       run: mvn clean install  # Adapter la commande de construction selon votre projet
