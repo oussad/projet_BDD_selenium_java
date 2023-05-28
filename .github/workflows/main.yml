@@ -11,14 +11,14 @@ jobs:
     - name: Configuration de Java
       uses: actions/setup-java@v2
       with:
-        java-version: '17'  # Spécifier la version de Java que vous souhaitez utiliser, par exemple '11'
-        distribution: jdk # Ajoutez cette ligne pour spécifier la distribution Java
- 
+        java-version: '17'
+        distribution: jdk
+
     - name: Construction du projet
-      run: mvn clean install  # Adapter la commande de construction selon votre projet
+      run: mvn clean install
 
     - name: Exécution des tests
-      run: mvn test  # Adapter la commande d'exécution des tests selon votre projet
+      run: mvn test
 
     - name: Archiver le rapport d'exécution
       uses: actions/upload-artifact@v2
