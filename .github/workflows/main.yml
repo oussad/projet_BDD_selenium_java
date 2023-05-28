@@ -12,7 +12,8 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'  # Spécifier la version de Java que vous souhaitez utiliser, par exemple '11'
-
+        distribution: jdk # Ajoutez cette ligne pour spécifier la distribution Java
+ 
     - name: Construction du projet
       run: mvn clean install  # Adapter la commande de construction selon votre projet
 
