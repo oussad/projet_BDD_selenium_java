@@ -1,13 +1,28 @@
-name: learn-github-actions
+name: test cucumber 
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
   check-bats-version:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+     
+    steps:
+    - name: Checkout du code source
+      uses: actions/checkout@v2
+
+    - name: Configuration de Java
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'  # Spécifier la version de Java que vous souhaitez utiliser, par exemple '11'
+
+    - name: Construction du projet
+      run: mvn clean install  # Adapter la commande de construction selon votre projet
+
+    - name: Exécution des tests
+      run: mvn test  # Adapter la commande d'exécution des tests selon votre projet
+
+    - name: Archiver le rapport d'exécution
+      uses: actions/upload-artifact@v2
+      with:
+        name: Rapport d'exécution
+        path: target/cucumber-reports
